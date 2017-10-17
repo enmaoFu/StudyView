@@ -10,7 +10,6 @@ import android.view.View;
 /**
  * 画布
  */
-
 public class DrawColorView extends View{
 
     public DrawColorView(Context context) {

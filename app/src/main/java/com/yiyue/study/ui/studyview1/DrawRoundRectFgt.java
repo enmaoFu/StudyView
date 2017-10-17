@@ -1,4 +1,4 @@
-package com.yiyue.study.fragments;
+package com.yiyue.study.ui.studyview1;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,20 +10,17 @@ import android.view.ViewGroup;
 import com.yiyue.study.R;
 
 /**
- * 矩形
+ * 绘制圆角矩形
  */
 
-public class DrawRectFragment extends Fragment{
+public class DrawRoundRectFgt extends Fragment{
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.draw_rect, container, false);
+        View view = inflater.inflate(R.layout.draw_round_rect,container,false);
 
         return view;
-
-
     }
-
 }

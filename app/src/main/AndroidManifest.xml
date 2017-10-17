@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ui.StudyView1"></activity>
+        <activity android:name=".ui.StudyView2"></activity>
+        <activity android:name=".ui.StudyView3"></activity>
+
     </application>
 
 </manifest>

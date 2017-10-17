@@ -9,11 +9,10 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * 矩形
+ * 绘制矩形
  */
 
-public class DrawRectView extends View{
-
+public class DrawRectView extends View {
     public DrawRectView(Context context) {
         super(context);
     }
@@ -34,18 +33,28 @@ public class DrawRectView extends View{
         paint.setStyle(Paint.Style.FILL);
         paint.setColor(Color.parseColor("#30acf4"));
         paint.setAntiAlias(true);
+        canvas.drawRect(20,20,300,150,paint);
 
-        canvas.drawRect(100,100,500,500,paint);
+        Paint paint2 = new Paint();
+        paint2.setStyle(Paint.Style.STROKE);
+        paint2.setStrokeWidth(10);
+        paint2.setColor(Color.parseColor("#30acf4"));
+        paint2.setAntiAlias(true);
+        canvas.drawRect(50,260,400,400,paint2);
 
+        Paint paint3 = new Paint();
+        paint3.setStyle(Paint.Style.STROKE);
+        paint3.setStrokeWidth(10);
+        paint3.setColor(Color.parseColor("#30acf4"));
+        paint3.setAntiAlias(true);
+        canvas.drawRect(70,280,380,380,paint3);
 
-
-        Paint paint1 = new Paint();
-        paint1.setStyle(Paint.Style.STROKE);
-        paint1.setColor(Color.parseColor("#30acf4"));
-        paint1.setAntiAlias(true);
-        paint1.setStrokeWidth(10);
-
-        canvas.drawRect(600,100,1000,1000,paint1);
+        Paint paint4 = new Paint();
+        paint4.setStyle(Paint.Style.STROKE);
+        paint4.setStrokeWidth(10);
+        paint4.setColor(Color.parseColor("#30acf4"));
+        paint4.setAntiAlias(true);
+        canvas.drawRect(90,300 ,360,360,paint4);
 
     }
 }

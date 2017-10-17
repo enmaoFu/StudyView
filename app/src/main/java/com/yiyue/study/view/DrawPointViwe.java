@@ -9,19 +9,19 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * 绘制圆角矩形
+ * 绘制点
  */
 
-public class DrawRoundRectView extends View {
-    public DrawRoundRectView(Context context) {
+public class DrawPointViwe extends View{
+    public DrawPointViwe(Context context) {
         super(context);
     }
 
-    public DrawRoundRectView(Context context, @Nullable AttributeSet attrs) {
+    public DrawPointViwe(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public DrawRoundRectView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public DrawPointViwe(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
@@ -30,16 +30,23 @@ public class DrawRoundRectView extends View {
         super.onDraw(canvas);
         Paint paint = new Paint();
         paint.setStyle(Paint.Style.FILL);
+        paint.setStrokeCap(Paint.Cap.SQUARE);
         paint.setColor(Color.parseColor("#30acf4"));
+        paint.setStrokeWidth(50);
         paint.setAntiAlias(true);
-        canvas.drawRoundRect(100,100,600,600,50,50,paint);
+        canvas.drawPoint(200,100,paint);
 
         Paint paint1 = new Paint();
         paint1.setStyle(Paint.Style.STROKE);
-        paint1.setStrokeWidth(20);
+        paint1.setStrokeCap(Paint.Cap.ROUND);
         paint1.setColor(Color.parseColor("#30acf4"));
+        paint1.setStrokeWidth(50);
         paint1.setAntiAlias(true);
-        canvas.drawRoundRect(700,700,1000,900,100,100,paint1);
+        canvas.drawPoint(200,200,paint1);
+
+        float[] points = {0, 0, 300, 300, 500, 300, 300, 500, 500, 500, 700, 500, 150, 100};
+        // 绘制5个点：(300, 300) (500, 300) (300, 500) (500, 500) (500, 700)
+        canvas.drawPoints(points,2/* 跳过两个数，即前两个 0 */,10/* 一共绘制 10 个数（5 个点）*/,paint1);
 
     }
 }

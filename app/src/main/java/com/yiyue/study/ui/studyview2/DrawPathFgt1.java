@@ -1,4 +1,4 @@
-package com.yiyue.study.fragments;
+package com.yiyue.study.ui.studyview2;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,16 +10,16 @@ import android.view.ViewGroup;
 import com.yiyue.study.R;
 
 /**
- * 画布
+ * 画自定义图型，路径绘制1
  */
 
-public class DrawColorFragment extends Fragment{
+public class DrawPathFgt1 extends Fragment{
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.draw_color, container, false);
+        View view = inflater.inflate(R.layout.draw_path_1,container,false);
 
         return view;
     }

@@ -2,45 +2,54 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/app_bg">
+    android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/colorAccent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="自定义View搞起来"
-            android:textColor="#ffffff"
-            android:textSize="18sp"/>
-
-    </RelativeLayout>
-
-    <android.support.design.widget.TabLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/tab_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ffffff"
-        app:tabGravity="fill"
-        app:tabIndicatorColor="@color/colorAccent"
-        app:tabMode="scrollable"
-        app:tabSelectedTextColor="@color/colorAccent"
-        app:tabTextColor="@color/font_black666"
-        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"/>
-
-    <View
-        style="@style/divier_style"/>
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/view_pager"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </android.support.v4.view.ViewPager>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/studyview_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义View学习1_基本绘制方法"
+                android:background="@color/colorAccent"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/studyview_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义View学习2_绘制自定义图形"
+                android:background="@color/colorAccent"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/studyview_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义View学习3_Paint详解"
+                android:background="@color/colorAccent"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

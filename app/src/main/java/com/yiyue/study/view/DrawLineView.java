@@ -9,11 +9,10 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * 画线
+ * 绘制线
  */
 
 public class DrawLineView extends View{
-
     public DrawLineView(Context context) {
         super(context);
     }
@@ -29,35 +28,27 @@ public class DrawLineView extends View{
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
         Paint paint = new Paint();
-        paint.setAntiAlias(true);
-        paint.setColor(Color.parseColor("#30acf4"));
         paint.setStrokeWidth(20);
-        paint.setStrokeCap(Paint.Cap.ROUND);
-
-        canvas.drawLine(100,300,500,420,paint);
-
-
+        paint.setColor(Color.parseColor("#30acf4"));
+        paint.setStrokeCap(Paint.Cap.BUTT);
+        paint.setAntiAlias(true);
+        canvas.drawLine(100,130,500,130,paint);
 
         Paint paint1 = new Paint();
-        paint1.setAntiAlias(true);
-        paint1.setColor(Color.parseColor("#30acf4"));
         paint1.setStrokeWidth(20);
-        paint1.setStrokeCap(Paint.Cap.BUTT);
-
-        canvas.drawLine(160,300,500,720,paint1);
-
-
+        paint1.setStrokeCap(Paint.Cap.ROUND);
+        paint1.setColor(Color.parseColor("#30acf4"));
+        paint1.setAntiAlias(true);
+        canvas.drawLine(200,300,500,600,paint1);
 
         Paint paint2 = new Paint();
-        paint2.setAntiAlias(true);
-        paint2.setColor(Color.parseColor("#30acf4"));
-        paint2.setStrokeWidth(5);
+        paint2.setStrokeWidth(20);
         paint2.setStrokeCap(Paint.Cap.BUTT);
-
-        float[] points = {20, 20, 120, 20, 70, 20, 70, 120, 20, 120, 120, 120, 150, 20, 250, 20, 150, 20, 150, 120, 250, 20, 250, 120, 150, 120, 250, 120};
-        canvas.drawLines(points,paint2);
+        paint2.setColor(Color.parseColor("#30acf4"));
+        paint2.setAntiAlias(true);
+        float[] lines = {600,600,900,600,900,600,900,900,900,900,600,900,600,900,600,600};
+        canvas.drawLines(lines,paint2);
 
     }
 }

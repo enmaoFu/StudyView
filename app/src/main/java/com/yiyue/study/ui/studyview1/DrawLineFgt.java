@@ -1,4 +1,4 @@
-package com.yiyue.study.fragments;
+package com.yiyue.study.ui.studyview1;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,16 +10,16 @@ import android.view.ViewGroup;
 import com.yiyue.study.R;
 
 /**
- * 画自定义图形
+ * 绘制线
  */
 
-public class DrawPathFragment1 extends Fragment{
+public class DrawLineFgt extends Fragment{
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.draw_path1,container,false);
+        View view = inflater.inflate(R.layout.draw_line,container,false);
 
         return view;
     }
