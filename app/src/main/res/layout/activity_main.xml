@@ -48,6 +48,39 @@
                 android:padding="8dp"
                 android:layout_marginTop="10dp"/>
 
+            <TextView
+                android:id="@+id/studyview_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义View学习4_文字的绘制"
+                android:background="@color/colorAccent"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/studyview_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义View学习5_裁剪与几何变换"
+                android:background="@color/colorAccent"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/studyview_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自定义View学习6_绘制顺序"
+                android:background="@color/colorAccent"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"/>
+
         </LinearLayout>
 
     </ScrollView>

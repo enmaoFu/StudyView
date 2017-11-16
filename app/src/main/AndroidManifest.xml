@@ -19,7 +19,10 @@
 
         <activity android:name=".ui.StudyView1"></activity>
         <activity android:name=".ui.StudyView2"></activity>
-        <activity android:name=".ui.StudyView3"></activity>
+        <activity android:name=".ui.StudyView3" android:hardwareAccelerated="false"></activity>
+        <activity android:name=".ui.StudyView4"></activity>
+        <activity android:name=".ui.StudyView5"></activity>
+        <activity android:name=".ui.StudyView6"></activity>
 
     </application>
 

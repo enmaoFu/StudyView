@@ -16,6 +16,9 @@ import com.yiyue.study.ui.studyview3.DrawPathShaderFgt1;
 import com.yiyue.study.ui.studyview3.DrawPathShaderFgt2;
 import com.yiyue.study.ui.studyview3.DrawPathShaderFgt3;
 import com.yiyue.study.ui.studyview3.DrawPathShaderFgt4;
+import com.yiyue.study.ui.studyview4.DrawTextFgt1;
+import com.yiyue.study.ui.studyview4.DrawTextFgt2;
+import com.yiyue.study.ui.studyview4.DrawTextFgt3;
 import com.yiyue.study.util.DensityUtils;
 
 import java.util.ArrayList;
@@ -25,7 +28,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class StudyView3 extends AppCompatActivity implements View.OnClickListener{
+public class StudyView4 extends AppCompatActivity implements View.OnClickListener{
 
     @Bind(R.id.tab_layout)
     TabLayout mTab;
@@ -38,7 +41,7 @@ public class StudyView3 extends AppCompatActivity implements View.OnClickListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_study_view_3);
+        setContentView(R.layout.activity_study_view_4);
 
         ButterKnife.bind(this);
 
@@ -50,15 +53,13 @@ public class StudyView3 extends AppCompatActivity implements View.OnClickListene
 
         mFragments = new ArrayList<>();
         mTabsString = new ArrayList<>();
-        mTabsString.add("drawPathShader着色器1");
-        mTabsString.add("drawPathShader着色器2");
-        mTabsString.add("drawPathShader着色器3");
-        mTabsString.add("drawPathShader着色器4");
+        mTabsString.add("drawText");
+        mTabsString.add("drawTextOnPath");
+        mTabsString.add("setTypeface");
 
-        mFragments.add(new DrawPathShaderFgt1());
-        mFragments.add(new DrawPathShaderFgt2());
-        mFragments.add(new DrawPathShaderFgt3());
-        mFragments.add(new DrawPathShaderFgt4());
+        mFragments.add(new DrawTextFgt1());
+        mFragments.add(new DrawTextFgt2());
+        mFragments.add(new DrawTextFgt3());
 
         //设置间隔
         LinearLayout linearLayout = (LinearLayout) mTab.getChildAt(0);
